@@ -1,6 +1,6 @@
 {
   "name": "jquery-ui-maps",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "main": [
     "ui/min/jquery.ui.map.full.min.js",
     "ui/min/jquery.ui.map.microdata.min.js",
