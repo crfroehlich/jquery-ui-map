@@ -49,6 +49,15 @@
 		},
 		
 		/**
+		 * Hides the streetview panorama
+		 * @see https://developers.google.com/maps/documentation/javascript/streetview#StreetViewPanoramas
+		 */
+	        hideStreetView: function () {
+			var panorama = this.get('map').getStreetView();
+			panorama.setVisible(false);
+	        },
+	        
+		/**
 		 * A service for converting between an address and a LatLng.
 		 * @param geocoderRequest:google.maps.GeocoderRequest
 		 * @param callback:function(result:google.maps.GeocoderResult, status:google.maps.GeocoderStatus), 
