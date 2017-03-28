@@ -305,7 +305,7 @@
 		
 		/**
 		 * Helper method for google.maps.Latlng
-		 * @param latLng:string/google.maps.LatLng
+		 * @param latLng:string/google.maps.LatLng/Object
 		 */
 		_latLng: function(latLng) {
 			if ( !latLng ) {
@@ -313,6 +313,10 @@
 			}
 			if ( latLng instanceof google.maps.LatLng ) {
 				return latLng;
+			}
+			else if(latLng instanceof Object) 
+			{
+				return new google.maps.LatLng(latLng.lat, latLng.lng);
 			} else {
 				latLng = latLng.replace(/ /g,'').split(',');
 				return new google.maps.LatLng(latLng[0], latLng[1]);
