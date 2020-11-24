@@ -30,7 +30,7 @@
   "keywords": ["jquery", "jquery-ui", "maps", "google-maps"],
   "engines": {
     "node": "0.12.x",
-    "npm": "1.4.x"
+    "npm": "6.14.x"
   },
   "scripts": {}
 }
